@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression pack">
+    <test name="Temperature Test">
+        <classes>
+            <class name="sinoptik.SinoptikTest"/>
+        </classes>
+    </test>
+
+</suite>
