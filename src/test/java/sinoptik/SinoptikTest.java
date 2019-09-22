@@ -10,6 +10,7 @@ public class SinoptikTest extends CommonTest {
 
     @Test(priority = 5)
     public void checkTemperatureTest() {
+        extentTestLogger = extentReports.startTest("Check weather on sinoptik ua:");
         UkrNetPage ukrNetPage = new UkrNetPage(driver);
 
         ukrNetPage.openUkrNetPage();
@@ -17,6 +18,7 @@ public class SinoptikTest extends CommonTest {
         String temperature = sinoptikPage.getTodayTemperature();
 
         Assert.assertEquals(temperature, "+10°C");
+        extentReports.endTest(extentTestLogger);
     }
 
 }
